@@ -1,0 +1,22 @@
+{
+  "name": "q",
+  "version": "1.0.0",
+  "description": "My portfolio, going through its various developmental stages.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BennAsabir/new-portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BennAsabir/new-portfolio/issues"
+  },
+  "homepage": "https://github.com/BennAsabir/new-portfolio#readme",
+  "dependencies": {
+    "sass": "^1.32.8"
+  }
+}
