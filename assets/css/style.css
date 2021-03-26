@@ -67,7 +67,7 @@ body, html {
 }
 
 
-/* * {
+ /* {
   box-sizing: border-box;
 } */
 /* body {
@@ -79,6 +79,7 @@ body, html {
   height: 100vh;
   font-family: 'Montserrat', sans-serif;
 } */
+
 .wrapper {
   display: flex;
   flex-flow: row wrap;
@@ -312,7 +313,7 @@ body, html {
 @media (max-width: 480px) {
   .back .demo {
     grid-row: -1;
-    grid-column: -5/4;
+    grid-column: -4;
     justify-self: center;
   }
 
@@ -321,6 +322,13 @@ body, html {
     grid-column: -3/10;
     justify-self: center;
   }
+
+  /* .back .return {
+    grid-row: -1;
+    grid-column: -2;
+    justify-self: center;
+    margin-left: 10%;
+  } */
 
 }
 
