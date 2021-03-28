@@ -138,8 +138,9 @@ body, html {
 }
 
 .back {
+  content: "";
   transform: rotateY(180deg);
-  background-color: rgb(255, 255, 255);
+  background-color: #fff;
   border: 2px solid rgb(67, 67, 67);
 }
 .back .inner {
