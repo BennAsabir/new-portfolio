@@ -28,7 +28,7 @@
     </a>
     <a href="#home" class="w3-bar-item w3-button"><img class="logo" src="./assets/images/LogoMakr-8V2fls.png" alt=""></a>
     <a href="#home" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-home"></i> HOME</a>
-    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="./index.html#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
     <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
     <a href="./resume.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> RESUME</a>
     <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
@@ -45,212 +45,433 @@
 
 <!-- PORTFOLIO CONTAINER-->
 <div class="w3-content w3-container w3-padding-64" id="portfolio">
-    <h3 class="w3-center Projecttitle">PORTFOLIO</h3>
+    <h3 class="w3-center">PORTFOLIO</h3>
     <p class="w3-center"><em>Here are some of my latest projects<br> Click on the images to make them bigger and read more about the projects</em></p><br>
-</div>  
-
-<div class="wrapper">
-  <div class="card">
-      <input type="checkbox" id="card1" class="more" aria-hidden="true">
-      <div class="content">
-          <div class="front" style="background-image: url('./assets/images/screenshot.png')">
-              <div class="inner">
-                  <h2>Weather App</h2>
-                  <div class="rating">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="far fa-star"></i>
-                  </div>
-                  <label for="card1" class="button" aria-hidden="true">
-                      Details
-                  </label>
-              </div>
-          </div>
-          <div class="back">
-              <div class="inner">
-                  <div class="info">
-                      <span>5</span>
-                      <div class="icon">
-                          <i class="fas fa-users"></i>
-                          <span>people</span>
-                      </div>
-                  </div>
-                  <div class="info">
-                      <span>4</span>
-                      <div class="icon">
-                          <i class="fas fa-door-open"></i>
-                          <span>rooms</span>
-                      </div>
-                  </div>
-                  <div class="info">
-                      <span>3</span>
-                      <div class="icon">
-                          <i class="fas fa-bed"></i>
-                          <span>beds</span>
-                      </div>
-                  </div>
-                  <div class="info">
-                      <span>1</span>
-                      <div class="icon">
-                          <i class="fas fa-bath"></i>
-                          <span>bath</span>
-                      </div>
-                  </div>
-                  <div class="description">
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, accusamus.</p>
-                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates earum nostrum ipsam
-                          ullam, reiciendis nam consectetur? Doloribus voluptate architecto possimus perferendis
-                          tenetur nemo amet temporibus, enim soluta nam, debitis.</p>
-                  </div>
-                  <div class="location">Warsaw, Poland</div>
-                  <div class="price">38€ / day</div>
-                  <label for="card1" class="button return" aria-hidden="true">
-                      <i class="fas fa-arrow-left"></i>
-                  </label>
-              </div>
-          </div>
-      </div>
   </div>
-  <div class="card">
-      <input type="checkbox" id="card2" class="more">
+  
+  <div class="wrapper">
+  
+    <div class="card">
+        <input type="checkbox" id="card1" class="more" aria-hidden="true">
+        <div class="content">
+          <!-- FRONT OF CARD -->
+            <div class="front" style="background-image: url('https://images.unsplash.com/photo-1529408686214-b48b8532f72c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=986e2dee5c1b488d877ad7ba1afaf2ec&auto=format&fit=crop&w=1350&q=80')">
+                <div class="inner">
+                    <h2>Weather App</h2>
+                    <div class="technology">
+                      <p>HTML / CSS / JS / jQUERY</p>
+                    </div>
+                    <label for="card1" class="button" aria-hidden="true">
+                        Details
+                    </label>
+                </div>
+            </div>
+            <!-- BACK OF CARD -->
+            <div class="back">
+                <div class="inner">
+                    <div class="info">
+                        <span>HTML</span>
+                    </div>
+                    <div class="info">
+                        <span>CSS</span>
+                    </div>
+                    <div class="info">
+                        <span>JAVASCRIPT</span>
+                    </div>
+                    <div class="info">
+                        <span>JQUERY</span>
+                    </div>
+                    <!-- DESCRIPTION -->
+                    <div class="description">
+                        <p>
+                          A weather dashboard application that will run in the browser and feature dynamically updated HTML,CSS and JS.
+                        </p>
+                        <p>
+                          When a user searches for a city, the user is presented with current and future conditions for that city, and that city is added to the search history for convience.
+                        </p>
+                    </div>
+                    <!-- PROJECT TITLE -->
+                    <div class="project-title">DETAILS</div>
+                    <!-- BUTTONS -->
+                    <label for="card1" class="button code" aria-hidden="true">
+                      <a href="https://github.com/BennAsabir/weather-dashboard" target="_blank">Code</a>
+                    </label>
+                    <label for="card1" class="button demo" aria-hidden="true">
+                      <a href="https://bennasabir.github.io/weather-dashboard/" target="_blank">Demo</a>
+                    </label>
+                    <label for="card1" class="button return" aria-hidden="true">
+                      <i class="fas fa-arrow-left"></i>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+      <!-- CARD 2 -->
+    <div class="card">
+      <input type="checkbox" id="card2" class="more" aria-hidden="true">
       <div class="content">
-          <div class="front" style="background-image: url('https://images.unsplash.com/photo-1515263487990-61b07816b324?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c02fb96f9cfc16d3649835b75d1b2033&auto=format&fit=crop&w=1350&q=80')">
+        <!-- FRONT OF CARD -->
+          <div class="front" style="background-image: url('https://images.unsplash.com/photo-1529408686214-b48b8532f72c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=986e2dee5c1b488d877ad7ba1afaf2ec&auto=format&fit=crop&w=1350&q=80')">
               <div class="inner">
-                  <h2>Modern flat</h2>
-                  <div class="rating">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star-half-alt"></i>
-                      <i class="far fa-star"></i>
+                  <h2>TASKMASTER PRO</h2>
+                  <div class="technology">
+                    <p>HTML / CSS / JS / jQUERY / MOMENT.JS / POPPER / GOOGLEFONTS</p>
                   </div>
                   <label for="card2" class="button" aria-hidden="true">
                       Details
                   </label>
               </div>
           </div>
+          <!-- BACK OF CARD -->
           <div class="back">
               <div class="inner">
                   <div class="info">
-                      <span>4</span>
-                      <div class="icon">
-                          <i class="fas fa-users"></i>
-                          <span>people</span>
-                      </div>
+                      <span>HTML</span>
                   </div>
                   <div class="info">
-                      <span>3</span>
-                      <div class="icon">
-                          <i class="fas fa-door-open"></i>
-                          <span>rooms</span>
-                      </div>
+                      <span>CSS</span>
                   </div>
                   <div class="info">
-                      <span>2</span>
-                      <div class="icon">
-                          <i class="fas fa-bed"></i>
-                          <span>beds</span>
-                      </div>
+                      <span>MOMENT.JS</span>
                   </div>
                   <div class="info">
-                      <span>1</span>
-                      <div class="icon">
-                          <i class="fas fa-bath"></i>
-                          <span>bath</span>
-                      </div>
+                      <span>JQUERY</span>
                   </div>
+                  <!-- DESCRIPTION -->
                   <div class="description">
                       <p>
-                          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem unde ea voluptas
-                          fuga
-                          odio vel veniam eveniet, explicabo autem earum?</p>
-                      <ul>
-                          <li>Lorem ipsum dolor sit amet.</li>
-                          <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
-                          <li>Lorem ipsum dolor sit amet consectetur.</li>
-                          <li>Lorem ipsum dolor sit amet.</li>
-                      </ul>
+                        Taskmaster Pro is a task-management application. 
+                        The app comes with these nifty features:
+                        <ul>
+                          <li>Users can create tasks with descriptions and due dates.</li>
+                          <li>Task data is persistent, thanks to localStorage.</li>
+                          <li>The Delete All button can delete tasks.(Drag/Drop Feature)</li>
+                        </ul>
+                      </p>
+                      <p>
+                        This project also comes with the added weight of legacy code.
+                      </p>
                   </div>
-                  <div class="location">Warsaw, Poland</div>
-                  <div class="price">42€ / day</div>
+                  <!-- PROJECT TITLE -->
+                  <div class="project-title">DETAILS</div>
+                  <!-- BUTTONS -->
+                  <label for="card2" class="button code" aria-hidden="true">
+                    <a href="https://github.com/BennAsabir/weather-dashboard" target="_blank">Code</a>
+                  </label>
+                  <label for="card2" class="button demo" aria-hidden="true">
+                    <a href="https://github.com/BennAsabir/weather-dashboard" target="_blank">Demo</a>
+                  </label>
                   <label for="card2" class="button return" aria-hidden="true">
-                      <i class="fas fa-arrow-left"></i>
+                    <i class="fas fa-arrow-left"></i>
                   </label>
               </div>
           </div>
       </div>
-  </div>
-  <div class="card">
-      <input type="checkbox" id="card3" class="more">
+    </div>
+  
+    <!-- CARD 3 -->
+    <div class="card">
+      <input type="checkbox" id="card3" class="more" aria-hidden="true">
       <div class="content">
-          <div class="front" style="background-image: url('https://images.unsplash.com/photo-1529595354331-201ad3ae5e71?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6114533e2d0c1c81534fe13611dbfd76&auto=format&fit=crop&w=658&q=80')">
+        <!-- FRONT OF CARD -->
+          <div class="front" style="background-image: url('https://images.unsplash.com/photo-1529408686214-b48b8532f72c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=986e2dee5c1b488d877ad7ba1afaf2ec&auto=format&fit=crop&w=1350&q=80')">
               <div class="inner">
-                  <h2>Luxury property</h2>
-                  <div class="rating">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
+                  <h2>ENVOY</h2>
+                  <div class="technology">
+                    <p>HTML / CSS / JS / NODE.JS / SEQEULIZE / MySQL / EXPRESS / DOTENV / EXPRESS-HANDLEBARS / 
+                      FLICKITY / BCRYPT / TYPED.JS
+                    </p>
                   </div>
                   <label for="card3" class="button" aria-hidden="true">
                       Details
                   </label>
               </div>
           </div>
+          <!-- BACK OF CARD -->
           <div class="back">
               <div class="inner">
                   <div class="info">
-                      <span>8</span>
-                      <div class="icon">
-                          <i class="fas fa-users"></i>
-                          <span>people</span>
-                      </div>
+                      <span>NODE</span>
                   </div>
                   <div class="info">
-                      <span>7</span>
-                      <div class="icon">
-                          <i class="fas fa-door-open"></i>
-                          <span>rooms</span>
-                      </div>
+                      <span>MySQL</span>
                   </div>
                   <div class="info">
-                      <span>5</span>
-                      <div class="icon">
-                          <i class="fas fa-bed"></i>
-                          <span>beds</span>
-                      </div>
+                      <span>HANDLEBARS</span>
                   </div>
                   <div class="info">
-                      <span>2</span>
-                      <div class="icon">
-                          <i class="fas fa-bath"></i>
-                          <span>baths</span>
-                      </div>
+                      <span>NPM.JS</span>
                   </div>
+                  <!-- DESCRIPTION -->
                   <div class="description">
-                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa libero
-                          totam nostrum consequatur autem quae provident quos alias fugit maxime nisi labore,
-                          temporibus tempore illo natus voluptates aliquam ipsum officia quasi placeat aut
-                          facilis
-                          laudantium nam!</p>
-                      <p>Quam, iusto.Neque ratione ut deserunt unde dicta nesciunt,
-                          repudiandae
-                          aspernatur explicabo numquam! Tenetur!</p>
+                      <p>
+                        A Hub for memebers to post, rate, review and talk about environmentally friendly products!
+                      </p>
+                      <p>
+                        The application follows the MVC paradigm in its architectural structure, using Handlebars.js as the templating language, 
+                        Sequelize as the ORM, and the express-session npm package for authentication.
+                      </p>
+                      <p>
+                        Click on Code to read more!
+                      </p>
                   </div>
-                  <div class="location">Cracow, Poland</div>
-                  <div class="price">60€ / day</div>
+                  <!-- PROJECT TITLE -->
+                  <div class="project-title">DETAILS</div>
+                  <!-- BUTTONS -->
+                  <label for="card3" class="button code" aria-hidden="true">
+                    <a href="https://github.com/BennAsabir/weather-dashboard" target="_blank">Code</a>
+                  </label>
+                  <label for="card3" class="button demo" aria-hidden="true">
+                    <a href="https://github.com/BennAsabir/weather-dashboard" target="_blank">Demo</a>
+                  </label>
                   <label for="card3" class="button return" aria-hidden="true">
-                      <i class="fas fa-arrow-left"></i>
+                    <i class="fas fa-arrow-left"></i>
                   </label>
               </div>
           </div>
       </div>
-  </div>
-</div>
+    </div>
 
+    <!-- CARD 4 -->
+    <div class="card">
+        <input type="checkbox" id="card4" class="more" aria-hidden="true">
+        <div class="content">
+          <!-- FRONT OF CARD -->
+            <div class="front" style="background-image: url('https://images.unsplash.com/photo-1529408686214-b48b8532f72c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=986e2dee5c1b488d877ad7ba1afaf2ec&auto=format&fit=crop&w=1350&q=80')">
+                <div class="inner">
+                    <h2>SaveTV</h2>
+                    <div class="technology">
+                      <p>HTML / CSS / FOUNDATION / JS / jQUERY / MOMENT.JS / MOTION UI / FRONTAWESOME / APIS</p>
+                    </div>
+                    <label for="card4" class="button" aria-hidden="true">
+                        Details
+                    </label>
+                </div>
+            </div>
+            <!-- BACK OF CARD -->
+            <div class="back">
+                <div class="inner">
+                    <div class="info">
+                        <span>HTML</span>
+                    </div>
+                    <div class="info">
+                        <span>APIs</span>
+                    </div>
+                    <div class="info">
+                        <span>JAVASCRIPT</span>
+                    </div>
+                    <div class="info">
+                        <span>JQUERY</span>
+                    </div>
+                    <!-- DESCRIPTION -->
+                    <div class="description">
+                        <p>
+                            SaveTV provides a quick and easy way to search up your favorite shows, what time they are scheduled to play, 
+                            find out other highly rated and related shows, and a one-click composed reminder schedule for upcoming show time.
+                        </p>
+                        <p> Some feature of SaveTv include
+                            <ul>
+                                <li>Related suggestions from search entries.</li>
+                                <li>Show information including rating, broadcast status and description.</li>
+                                <li>Show time reminder organized in dates.</li>
+                                <li>Favorites list.</li> 
+                            </ul>
+                        </p>
+                    </div>
+                    <!-- PROJECT TITLE -->
+                    <div class="project-title">DETAILS</div>
+                    <!-- BUTTONS -->
+                    <label for="card4" class="button code" aria-hidden="true">
+                        <a href="https://github.com/BennAsabir/weather-dashboard" target="_blank">Code</a>
+                    </label>
+                    <label for="card4" class="button demo" aria-hidden="true">
+                        <a href="https://github.com/BennAsabir/weather-dashboard" target="_blank">Demo</a>
+                    </label>
+                    <label for="card4" class="button return" aria-hidden="true">
+                      <i class="fas fa-arrow-left"></i>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+      <!-- CARD 5 -->
+    <div class="card">
+      <input type="checkbox" id="card5" class="more" aria-hidden="true">
+      <div class="content">
+        <!-- FRONT OF CARD -->
+          <div class="front" style="background-image: url('https://images.unsplash.com/photo-1529408686214-b48b8532f72c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=986e2dee5c1b488d877ad7ba1afaf2ec&auto=format&fit=crop&w=1350&q=80')">
+              <div class="inner">
+                  <h2>TEAM GENERATOR</h2>
+                  <div class="technology">
+                    <p> JS / NODE / ES6 / NPM / JEST</p>
+                  </div>
+                  <label for="card5" class="button" aria-hidden="true">
+                      Details
+                  </label>
+              </div>
+          </div>
+          <!-- BACK OF CARD -->
+          <div class="back">
+              <div class="inner">
+                  <div class="info">
+                      <span>JEST</span>
+                  </div>
+                  <div class="info">
+                      <span>ES6</span>
+                  </div>
+                  <div class="info">
+                      <span>MOMENT.JS</span>
+                  </div>
+                  <div class="info">
+                      <span>JQUERY</span>
+                  </div>
+                  <!-- DESCRIPTION -->
+                  <div class="description">
+                      <p>
+                        A command-line application that takes in information about employees on a software engineering
+                        team and generates an HTML webpage that displays summaries for each person.
+                      </p>
+                      <p>
+                        When all team members have been added, the application generates a html file 
+                        which displays all team member summaries on one page.
+                      </p>
+                  </div>
+                  <!-- PROJECT TITLE -->
+                  <div class="project-title">DETAILS</div>
+                  <!-- BUTTONS -->
+                  <label for="card5" class="button code" aria-hidden="true">
+                    <a href="https://github.com/BennAsabir/weather-dashboard" target="_blank">Code</a>
+                  </label>
+                  <label for="card5" class="button demo" aria-hidden="true">
+                    <a href="https://github.com/BennAsabir/weather-dashboard" target="_blank">Demo</a>
+                  </label>
+                  <label for="card5" class="button return" aria-hidden="true">
+                    <i class="fas fa-arrow-left"></i>
+                  </label>
+              </div>
+          </div>
+      </div>
+    </div>
+  
+    <!-- CARD 6 -->
+    <div class="card">
+      <input type="checkbox" id="card6" class="more" aria-hidden="true">
+      <div class="content">
+        <!-- FRONT OF CARD -->
+          <div class="front" style="background-image: url('https://images.unsplash.com/photo-1529408686214-b48b8532f72c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=986e2dee5c1b488d877ad7ba1afaf2ec&auto=format&fit=crop&w=1350&q=80')">
+              <div class="inner">
+                  <h2>NOTE TAKER</h2>
+                  <div class="technology">
+                    <p>HTML / CSS / JS / NODE.JS / SEQEULIZE / MySQL / EXPRESS / DOTENV / EXPRESS-HANDLEBARS / 
+                      FLICKITY / BCRYPT / TYPED.JS
+                    </p>
+                  </div>
+                  <label for="card6" class="button" aria-hidden="true">
+                      Details
+                  </label>
+              </div>
+          </div>
+          <!-- BACK OF CARD -->
+          <div class="back">
+              <div class="inner">
+                <div class="info">
+                    <span>HTML</span>
+                </div>
+                <div class="info">
+                    <span>UUID</span>
+                </div>
+                <div class="info">
+                    <span>JAVASCRIPT</span>
+                </div>
+                <div class="info">
+                    <span>JQUERY</span>
+                </div>
+                  <!-- DESCRIPTION -->
+                  <div class="description">
+                      <p>
+                        An application that can be used to write and save notes. 
+                        This application uses an Express.js back-end and will save and retrieve note data from a JSON file
+                      </p>
+                      <p>
+                        Create a new task by clicking on the pen icon and typing out the title and description of task, then save the task by clicking the save icon. 
+                        The task will be saved on the left hand column. You can also delete task by clicking the trash icon.
+                      </p>
+                      <p>
+                        Click on Code to read more!
+                      </p>
+                  </div>
+                  <!-- PROJECT TITLE -->
+                  <div class="project-title">DETAILS</div>
+                  <!-- BUTTONS -->
+                  <label for="card6" class="button code" aria-hidden="true">
+                    <a href="https://github.com/BennAsabir/weather-dashboard" target="_blank">Code</a>
+                  </label>
+                  <label for="card6" class="button demo" aria-hidden="true">
+                    <a href="https://github.com/BennAsabir/weather-dashboard" target="_blank">Demo</a>
+                  </label>
+                  <label for="card6" class="button return" aria-hidden="true">
+                    <i class="fas fa-arrow-left"></i>
+                  </label>
+              </div>
+          </div>
+      </div>
+    </div>
+  
+  </div>
+  <br>
+
+  <div class="w3-center">
+    <button class="viewmore"><span class="projectbutton"><a href="./portfolio.html">View More</a></span></button>
+  </div>
+
+
+  
+  <!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+    <h3 class="w3-center">WHERE I WORK</h3>
+    <p class="w3-center"><em>I'd love your feedback!</em></p>
+  
+    <div class="w3-row w3-padding-32 w3-section">
+      <div class="w3-col m4 w3-container">
+        <img src="./assets/images/LogoMakr-8V2fls.png" class="w3-image w3-round" style="width:100%">
+      </div>
+      <div class="w3-col m8 w3-panel">
+        <div class="w3-large w3-margin-bottom">
+          <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Mississauga, ON<br>
+          <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: TBA<br>
+          <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: TBA<br>
+        </div>
+        <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
+        <form action="/action_page.php" target="_blank">
+          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+            </div>
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+            </div>
+          </div>
+          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+          <button class="w3-button w3-black w3-right w3-section" type="submit">
+            <i class="fa fa-paper-plane"></i> SEND MESSAGE
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Footer -->
+  <footer class="w3-center w3-black w3-padding-6 w3-opacity w3-hover-opacity-off">
+    <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+    <div class="w3-xlarge w3-section">
+      <a href="https://www.instagram.com/king_benn/"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+      <a href="https://www.linkedin.com/in/benasabir/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+      <a href="https://github.com/BennAsabir"><i class="fa fa-github-square w3-hover-opacity"></i></a>
+    </div>
+    <p><a href="https://github.com/BennAsabir" target="_blank" class="w3-hover-text-green">BennAsabir</a></p>
+  </footer>
 
 
 

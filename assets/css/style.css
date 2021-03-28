@@ -51,13 +51,6 @@ body, html {
   background-color: black;
 }
 
-/* PORTFOLIO BUTTONS */
-.work-btn {
-  padding: 10px 60px 10px 60px;
-  margin: 10px;
-}
-
-
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1600px) {
   .bgimg-1, .bgimg-2, .bgimg-3 {
@@ -65,20 +58,6 @@ body, html {
     min-height: 400px;
   }
 }
-
-
- /* {
-  box-sizing: border-box;
-} */
-/* body {
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  font-family: 'Montserrat', sans-serif;
-} */
 
 .wrapper {
   display: flex;
@@ -157,9 +136,7 @@ body, html {
   display: flex;
   flex-flow: row nowrap;
 }
-/* .front .rating i {
-  margin: 0 1px;
-} */
+
 .back {
   transform: rotateY(180deg);
   background-color: #fff;
@@ -177,36 +154,7 @@ body, html {
   color: rgb(67, 67, 67);
   grid-row: 4;
 }
-/* .back .info:not(:first-of-type):before {
-  content: '';
-  position: absolute;
-  left: -0.9em;
-  height: 18px;
-  width: 1px;
-  background-color: #ccc;
-} */
-/* .back .info span {
-  font-size: 1em;
 
-} */
-/* .back .info i {
-  font-size: 1.5em;
-} */
-/* .back .info i:before {
-  background: linear-gradient(40deg, rgba(0, 0, 0, 0.7), rgba(210, 210, 210, 0.922));
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-} */
-/* .back .info .icon {
-  margin-left: 0.5em;
-} */
-/* .back .info .icon span {
-  display: block;
-  margin-top: -0.25em;
-  font-size: 0.5em;
-  font-weight: 600;
-  white-space: nowrap;
-} */
 .back .description {
   border-color: rgb(67, 67, 67);
   grid-row: 5;
@@ -219,21 +167,13 @@ body, html {
   color: rgb(67, 67, 67);
   padding-right: 10px;
 }
-/* .back .location, .back .price {
-  font-weight: 600;
-  color: rgb(67, 67, 67);
-  grid-row: 1;
-  font-size: 0.86em;
-} */
+
 .back .project-title {
   font-size: 1.5em;
   grid-column: 1/3;
   justify-self: left;
 }
-/* .back .price {
-  grid-column: -3;
-  justify-self: right;
-} */
+
 .back .button {
   grid-row: -9;
   grid-column: 4/-1;
@@ -258,7 +198,6 @@ body, html {
   letter-spacing: 1px;
   font-weight: 600;
   cursor: pointer;
-  /* display: block; */
   padding: 0 1.5em;
   height: 3em;
   line-height: 2.9em;
@@ -267,18 +206,17 @@ body, html {
   border: solid 2px #fff;
   color: #fff;
   border-radius: 4px;
-  /* text-align: center;
-  left: 50%;
-  backface-visibility: hidden; */
   transition: 0.3s ease-in-out;
   text-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
 }
+
 .button:hover {
   background-color: #fff;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
   text-shadow: none;
   color: rgb(67, 67, 67);
 }
+
 .button.demo, .button.code {
   line-height: 3em;
   color: rgb(67, 67, 67);
@@ -298,18 +236,23 @@ body, html {
   color: #fff;
   box-shadow: none;
 }
+
 ::-webkit-scrollbar {
   width: 5px;
 }
+
 ::-webkit-scrollbar-track {
   background: #c3c3c3;
 }
+
 ::-webkit-scrollbar-thumb {
   background: #000000;
 }
+
 ::-webkit-scrollbar-thumb:hover {
   background: rgb(67, 67, 67);
 }
+
 @media (max-width: 480px) {
   .back .demo {
     grid-row: -1;
@@ -323,13 +266,6 @@ body, html {
     justify-self: center;
   }
 
-  /* .back .return {
-    grid-row: -1;
-    grid-column: -2;
-    justify-self: center;
-    margin-left: 10%;
-  } */
-
 }
 
 @media (max-width: 480px) {
@@ -339,47 +275,59 @@ body, html {
 }
 
 
-/* VIEW MORE BUTTON */
-.viewmore {
-  border-radius: 4px;
-  background-color: rgb(67, 67, 67);
-  border: none;
-  color: #FFFFFF;
-  text-align: center;
-  font-size: 17px;
-  padding: 10px;
-  width: 130px;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 5px;
-}
-
-.viewmore .projectbutton {
-  cursor: pointer;
-  display: inline-block;
+/* Popup container - can be anything you want */
+.popup {
   position: relative;
-  transition: 0.5s;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
-.viewmore .projectbutton:after {
-  content: '\00bb';
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
   position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
 }
 
-.viewmore:hover .projectbutton {
-
-  padding-right: 25px;
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
 }
 
-.viewmore:hover {
-  background-color: #a1a1a1;
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
 }
 
-.viewmore:hover .projectbutton:after {
-  opacity: 1;
-  right: 0;
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
 }
