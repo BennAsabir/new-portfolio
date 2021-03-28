@@ -138,9 +138,8 @@ body, html {
 }
 
 .back {
-  content: "";
   transform: rotateY(180deg);
-  background-color: #fff;
+  background-image: url(../images/white-back.jpeg) ;
   border: 2px solid rgb(67, 67, 67);
 }
 .back .inner {
