@@ -59,6 +59,7 @@
 <!-- Container (About Section) -->
 <div class="w3-content w3-container w3-padding-64" id="about">
   <h3 class="w3-center">ABOUT ME</h3>
+  <hr>
   <p class="w3-center"><em>I Love Web Design</em></p>
   <p>Hi, my name is Benjamin Asabir, and i am a freelance Graphic Designer/ Web Developer. 
     I am currently enrolled in the Coding Boot Camp Program in University Of Toronto to further my skill and knowledge. 
@@ -117,15 +118,210 @@
 </div>
 
 <!-- PORTFOLIO CONTAINER-->
-<div class="w3-content w3-container w3-padding-64" id="portfolio">
+<div class="w3-content w3-container" id="portfolio">
+  <br>
   <h3 class="w3-center">PORTFOLIO</h3>
+  <hr>
   <p class="w3-center"><em>Here are some of my latest projects<br> Click on Details to flip card and read more about the projects</em></p><br>
 </div>
 
 <div class="wrapper">
-
+  <!-- CARD 1 -->
   <div class="card">
-      <input type="checkbox" id="card1" class="more" aria-hidden="true">
+    <input type="checkbox" id="card1" class="more" aria-hidden="true">
+    <div class="content">
+      <!-- FRONT OF CARD -->
+        <div class="front" style="background-image: url('./assets/images/envoypic.png')">
+            <div class="inner">
+                <h2>ENVOY</h2>
+                <span class="new-project" style="float: right;">NEW!!</span>
+                <div class="technology">
+                  <p>HTML / CSS / JS / NODE.JS / SEQEULIZE / MySQL / EXPRESS / DOTENV / EXPRESS-HANDLEBARS / 
+                    FLICKITY / BCRYPT / TYPED.JS
+                  </p>
+                </div>
+                <label for="card1" class="button" aria-hidden="true">
+                    Details
+                </label>
+            </div>
+        </div>
+        <!-- BACK OF CARD -->
+        <div class="back">
+            <div class="inner">
+                <div class="info">
+                    <span>NODE</span>
+                </div>
+                <div class="info">
+                    <span>MySQL</span>
+                </div>
+                <div class="info">
+                    <span>HANDLEBARS</span>
+                </div>
+                <div class="info">
+                    <span>NPM.JS</span>
+                </div>
+                <!-- DESCRIPTION -->
+                <div class="description">
+                    <p>
+                      A Hub for memebers to post, rate, review and talk about environmentally friendly products!
+                    </p>
+                    <p>
+                      The application follows the MVC paradigm in its architectural structure, using Handlebars.js as the templating language, 
+                      Sequelize as the ORM, and the express-session npm package for authentication.
+                    </p>
+                    <p>
+                      Click on Code to read more!
+                    </p>
+                </div>
+                <!-- PROJECT TITLE -->
+                <div class="project-title">DETAILS</div>
+                <!-- BUTTONS -->
+                <label for="card1" class="button code" aria-hidden="true">
+                  <a href="https://github.com/Envoy-products/Envoy-Products" target="_blank">Code</a>
+                </label>
+                <label for="card1" class="button demo" aria-hidden="true">
+                  <a href="https://envoy-guide.herokuapp.com/" target="_blank">Demo</a>
+                </label>
+                <label for="card1" class="button return" aria-hidden="true">
+                  <i class="fas fa-arrow-left"></i>
+                </label>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <!-- CARD 2 -->
+  <div class="card">
+    <input type="checkbox" id="card2" class="more" aria-hidden="true">
+    <div class="content">
+      <!-- FRONT OF CARD -->
+        <div class="front" style="background-image: url('./assets/images/demo.png')">
+            <div class="inner">
+                <h2>Not-Twitter</h2>
+                <div class="technology">
+                  <p>JAVASCRIPT / CSS / REACT / NODE.JS / GRAPHQL / APOLLO SERVER / REACT ROUTER / NODEMON / JSON-WEBTOKEN / 
+                    FAKER
+                  </p>
+                </div>
+                <label for="card2" class="button" aria-hidden="true">
+                    Details
+                </label>
+            </div>
+        </div>
+        <!-- BACK OF CARD -->
+        <div class="back">
+            <div class="inner">
+                <div class="info">
+                    <span>NODE</span>
+                </div>
+                <div class="info">
+                    <span>APOLLO</span>
+                </div>
+                <div class="info">
+                    <span>JAVASCRIPT</span>
+                </div>
+                <div class="info">
+                    <span>GRAPHQL</span>
+                </div>
+                <!-- DESCRIPTION -->
+                <div class="description">
+                    <p>
+                      A FULL MERN stack!! (MongoDB, Express.js, React, and Node.js)
+                    </p>
+                    <p>
+                      A social media application. 
+                      Users will be able to sign up and create an account, post their thoughts, 
+                      and interact with other users, just like you might find in the social media apps you use day in and day out in real life.
+                    </p>
+                    <p>
+                      Click on Code to read more!
+                    </p>
+                </div>
+                <!-- PROJECT TITLE -->
+                <div class="project-title">DETAILS</div>
+                <!-- BUTTONS -->
+                <label for="card2" class="button code" aria-hidden="true">
+                  <a href="https://github.com/BennAsabir/deep-thoughts" target="_blank">Code</a>
+                </label>
+                <label for="card2" class="button demo" aria-hidden="true">
+                  <a href="https://morning-tor-27341.herokuapp.com/" target="_blank">Demo</a>
+                </label>
+                <label for="card2" class="button return" aria-hidden="true">
+                  <i class="fas fa-arrow-left"></i>
+                </label>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <!-- CARD 3 -->
+  <div class="card">
+    <input type="checkbox" id="card3" class="more" aria-hidden="true">
+    <div class="content">
+      <!-- FRONT OF CARD -->
+        <div class="front" style="background-image: url('./assets/images/pizzashot.png')">
+            <div class="inner">
+                <h2>pizza-wars</h2>
+                <div class="technology">
+                  <p>HTML / CSS / JAVASCRIPT / NODE.JS / EXPRESS / MongoDB / 
+                    MONGOOSE / BCRYPT / TYPED.JS
+                  </p>
+                </div>
+                <label for="card3" class="button" aria-hidden="true">
+                    Details
+                </label>
+            </div>
+        </div>
+        <!-- BACK OF CARD -->
+        <div class="back">
+            <div class="inner">
+                <div class="info">
+                    <span>NODE</span>
+                </div>
+                <div class="info">
+                    <span>EXPRESS</span>
+                </div>
+                <div class="info">
+                    <span>JAVASCRIPT</span>
+                </div>
+                <div class="info">
+                    <span>MongoDB</span>
+                </div>
+                <!-- DESCRIPTION -->
+                <div class="description">
+                    <p>
+                      An application that lets users connect with each other based on their love of pizza!
+                    </p>
+                    <p>
+                      In Pizza Wars, users can share and discuss their dream pizza-topping combinations. 
+                      Pizza is ubiquitous in everyday life all over the world, 
+                      and no application has ever been created with the sole purpose of facilitating discussions about it. 
+                      This application uses Express.js for routing, a MongoDB database, and the Mongoose ODM.
+                    </p>
+                    <p>
+                      Click on Code to read more!
+                    </p>
+                </div>
+                <!-- PROJECT TITLE -->
+                <div class="project-title">DETAILS</div>
+                <!-- BUTTONS -->
+                <label for="card3" class="button code" aria-hidden="true">
+                  <a href="https://github.com/BennAsabir/pizza-wars" target="_blank">Code</a>
+                </label>
+                <label for="card3" class="button demo" aria-hidden="true">
+                  <a href="https://salty-waters-47896.herokuapp.com/" target="_blank">Demo</a>
+                </label>
+                <label for="card3" class="button return" aria-hidden="true">
+                  <i class="fas fa-arrow-left"></i>
+                </label>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <!-- CARD 4 -->
+  <div class="card">
+      <input type="checkbox" id="card4" class="more" aria-hidden="true">
       <div class="content">
         <!-- FRONT OF CARD -->
           <div class="front" style="background-image: url('./assets/images/screenshot.png')">
@@ -134,7 +330,7 @@
                   <div class="technology">
                     <p>HTML / CSS / JS / jQUERY</p>
                   </div>
-                  <label for="card1" class="button" aria-hidden="true">
+                  <label for="card4" class="button" aria-hidden="true">
                       Details
                   </label>
               </div>
@@ -166,13 +362,13 @@
                   <!-- PROJECT TITLE -->
                   <div class="project-title">DETAILS</div>
                   <!-- BUTTONS -->
-                  <label for="card1" class="button code" aria-hidden="true">
+                  <label for="card4" class="button code" aria-hidden="true">
                     <a href="https://github.com/BennAsabir/weather-dashboard" target="_blank">Code</a>
                   </label>
-                  <label for="card1" class="button demo" aria-hidden="true">
+                  <label for="card4" class="button demo" aria-hidden="true">
                     <a href="https://bennasabir.github.io/weather-dashboard/" target="_blank">Demo</a>
                   </label>
-                  <label for="card1" class="button return" aria-hidden="true">
+                  <label for="card4" class="button return" aria-hidden="true">
                     <i class="fas fa-arrow-left"></i>
                   </label>
               </div>
@@ -180,9 +376,9 @@
       </div>
   </div>
 
-    <!-- CARD 2 -->
+  <!-- CARD 5 -->
   <div class="card">
-    <input type="checkbox" id="card2" class="more" aria-hidden="true">
+    <input type="checkbox" id="card5" class="more" aria-hidden="true">
     <div class="content">
       <!-- FRONT OF CARD -->
         <div class="front" style="background-image: url('./assets/images/screenshot2.png')">
@@ -191,7 +387,7 @@
                 <div class="technology">
                   <p>HTML / CSS / JS / jQUERY / MOMENT.JS / POPPER / GOOGLEFONTS</p>
                 </div>
-                <label for="card2" class="button" aria-hidden="true">
+                <label for="card5" class="button" aria-hidden="true">
                     Details
                 </label>
             </div>
@@ -229,13 +425,13 @@
                 <!-- PROJECT TITLE -->
                 <div class="project-title">DETAILS</div>
                 <!-- BUTTONS -->
-                <label for="card2" class="button code" aria-hidden="true">
+                <label for="card5" class="button code" aria-hidden="true">
                   <a href="https://github.com/BennAsabir/taskmaster-pro" target="_blank">Code</a>
                 </label>
-                <label for="card2" class="button demo" aria-hidden="true">
+                <label for="card5" class="button demo" aria-hidden="true">
                   <a href="https://bennasabir.github.io/taskmaster-pro/" target="_blank">Demo</a>
                 </label>
-                <label for="card2" class="button return" aria-hidden="true">
+                <label for="card5" class="button return" aria-hidden="true">
                   <i class="fas fa-arrow-left"></i>
                 </label>
             </div>
@@ -243,21 +439,20 @@
     </div>
   </div>
 
-  <!-- CARD 3 -->
+  <!-- CARD 6 -->
   <div class="card">
-    <input type="checkbox" id="card3" class="more" aria-hidden="true">
+    <input type="checkbox" id="card6" class="more" aria-hidden="true">
     <div class="content">
       <!-- FRONT OF CARD -->
-        <div class="front" style="background-image: url('./assets/images/envoypic.png')">
+        <div class="front" style="background-image: url('./assets/images/budget.png')">
             <div class="inner">
-                <h2>ENVOY</h2>
-                <span class="new-project" style="float: right;">NEW!!</span>
+                <h2>budget trackr</h2>
                 <div class="technology">
-                  <p>HTML / CSS / JS / NODE.JS / SEQEULIZE / MySQL / EXPRESS / DOTENV / EXPRESS-HANDLEBARS / 
-                    FLICKITY / BCRYPT / TYPED.JS
+                  <p>HTML / CSS / JAVASCRIPT / NODE.JS / EXPRESS / MongoDB / 
+                    MONGOOSE / BCRYPT / TYPED.JS
                   </p>
                 </div>
-                <label for="card3" class="button" aria-hidden="true">
+                <label for="card6" class="button" aria-hidden="true">
                     Details
                 </label>
             </div>
@@ -265,26 +460,27 @@
         <!-- BACK OF CARD -->
         <div class="back">
             <div class="inner">
-                <div class="info">
-                    <span>NODE</span>
-                </div>
-                <div class="info">
-                    <span>MySQL</span>
-                </div>
-                <div class="info">
-                    <span>HANDLEBARS</span>
-                </div>
-                <div class="info">
-                    <span>NPM.JS</span>
-                </div>
+              <div class="info">
+                  <span>NODE</span>
+              </div>
+              <div class="info">
+                  <span>EXPRESS</span>
+              </div>
+              <div class="info">
+                  <span>JAVASCRIPT</span>
+              </div>
+              <div class="info">
+                  <span>MongoDB</span>
+              </div>
                 <!-- DESCRIPTION -->
                 <div class="description">
                     <p>
-                      A Hub for memebers to post, rate, review and talk about environmentally friendly products!
+                      A budget tracker application that allows for offline access and functionality.
                     </p>
                     <p>
-                      The application follows the MVC paradigm in its architectural structure, using Handlebars.js as the templating language, 
-                      Sequelize as the ORM, and the express-session npm package for authentication.
+                      The user will be able to add expenses and deposits to their budget with or without a connection. 
+                      If the user enters transactions offline, the total will be updated when they're brought back online.
+                      This application is installable as well! download by clicking on the download icon in the address bar
                     </p>
                     <p>
                       Click on Code to read more!
@@ -293,13 +489,13 @@
                 <!-- PROJECT TITLE -->
                 <div class="project-title">DETAILS</div>
                 <!-- BUTTONS -->
-                <label for="card3" class="button code" aria-hidden="true">
-                  <a href="https://github.com/Envoy-products/Envoy-Products" target="_blank">Code</a>
+                <label for="card6" class="button code" aria-hidden="true">
+                  <a href="https://github.com/BennAsabir/pro-budget-tracker" target="_blank">Code</a>
                 </label>
-                <label for="card3" class="button demo" aria-hidden="true">
-                  <a href="https://envoy-guide.herokuapp.com/" target="_blank">Demo</a>
+                <label for="card6" class="button demo" aria-hidden="true">
+                  <a href="https://sleepy-brook-70204.herokuapp.com/" target="_blank">Demo</a>
                 </label>
-                <label for="card3" class="button return" aria-hidden="true">
+                <label for="card6" class="button return" aria-hidden="true">
                   <i class="fas fa-arrow-left"></i>
                 </label>
             </div>
@@ -307,9 +503,9 @@
     </div>
   </div>
 
-  <!-- CARD 4 -->
+  <!-- CARD 7 -->
   <div class="card">
-      <input type="checkbox" id="card4" class="more" aria-hidden="true">
+      <input type="checkbox" id="card7" class="more" aria-hidden="true">
       <div class="content">
         <!-- FRONT OF CARD -->
           <div class="front" style="background-image: url('./assets/images/screenshot5.png')">
@@ -318,7 +514,7 @@
                   <div class="technology">
                     <p>HTML / CSS / FOUNDATION / JS / jQUERY / MOMENT.JS / MOTION UI / FONTAWESOME / APIs</p>
                   </div>
-                  <label for="card4" class="button" aria-hidden="true">
+                  <label for="card7" class="button" aria-hidden="true">
                       Details
                   </label>
               </div>
@@ -356,13 +552,13 @@
                   <!-- PROJECT TITLE -->
                   <div class="project-title">DETAILS</div>
                   <!-- BUTTONS -->
-                  <label for="card4" class="button code" aria-hidden="true">
+                  <label for="card7" class="button code" aria-hidden="true">
                       <a href="https://github.com/UTBootCampGroup2/SaveTV" target="_blank">Code</a>
                   </label>
-                  <label for="card4" class="button demo" aria-hidden="true">
+                  <label for="card7" class="button demo" aria-hidden="true">
                       <a href="https://utbootcampgroup2.github.io/SaveTV/" target="_blank">Demo</a>
                   </label>
-                  <label for="card4" class="button return" aria-hidden="true">
+                  <label for="card7" class="button return" aria-hidden="true">
                     <i class="fas fa-arrow-left"></i>
                   </label>
               </div>
@@ -370,9 +566,9 @@
       </div>
   </div>
 
-    <!-- CARD 5 -->
+  <!-- CARD 8 -->
   <div class="card">
-    <input type="checkbox" id="card5" class="more" aria-hidden="true">
+    <input type="checkbox" id="card8" class="more" aria-hidden="true">
     <div class="content">
       <!-- FRONT OF CARD -->
         <div class="front" style="background-image: url('./assets/images/screenshottwo.png')">
@@ -381,7 +577,7 @@
                 <div class="technology">
                   <p> JS / NODE / ES6 / NPM / JEST</p>
                 </div>
-                <label for="card5" class="button" aria-hidden="true">
+                <label for="card8" class="button" aria-hidden="true">
                     Details
                 </label>
             </div>
@@ -415,10 +611,10 @@
                 <!-- PROJECT TITLE -->
                 <div class="project-title">DETAILS</div>
                 <!-- BUTTONS -->
-                <label for="card5" class="button code" aria-hidden="true">
+                <label for="card8" class="button code" aria-hidden="true">
                   <a href="https://github.com/BennAsabir/Team-Profile-Generator" target="_blank">Code</a>
                 </label>
-                <button for="card5" class="button demo popup" onclick="myFunction()">
+                <button for="card8" class="button demo popup" onclick="myFunction()">
                   Demo
                   <span class="popuptext" id="myPopup">This App has no demo!</span>
                 </button>
@@ -430,7 +626,7 @@
                     popup.classList.toggle("show");
                   }
                   </script>
-                <label for="card5" class="button return" aria-hidden="true">
+                <label for="card8" class="button return" aria-hidden="true">
                   <i class="fas fa-arrow-left"></i>
                 </label>
             </div>
@@ -438,9 +634,9 @@
     </div>
   </div>
 
-  <!-- CARD 6 -->
+  <!-- CARD 9 -->
   <div class="card">
-    <input type="checkbox" id="card6" class="more" aria-hidden="true">
+    <input type="checkbox" id="card9" class="more" aria-hidden="true">
     <div class="content">
       <!-- FRONT OF CARD -->
         <div class="front" style="background-image: url('./assets/images/screenshotcopy.png')">
@@ -450,7 +646,7 @@
                   <p>HTML / CSS / BOOTSTRAP / JS / NODE.JS / EXPRESS/ UUID 
                   </p>
                 </div>
-                <label for="card6" class="button" aria-hidden="true">
+                <label for="card9" class="button" aria-hidden="true">
                     Details
                 </label>
             </div>
@@ -487,13 +683,13 @@
                 <!-- PROJECT TITLE -->
                 <div class="project-title">DETAILS</div>
                 <!-- BUTTONS -->
-                <label for="card6" class="button code" aria-hidden="true">
+                <label for="card9" class="button code" aria-hidden="true">
                   <a href="https://github.com/BennAsabir/note-taker" target="_blank">Code</a>
                 </label>
-                <label for="card6" class="button demo" aria-hidden="true">
+                <label for="card9" class="button demo" aria-hidden="true">
                   <a href="https://fast-hamlet-04025.herokuapp.com/" target="_blank">Demo</a>
                 </label>
-                <label for="card6" class="button return" aria-hidden="true">
+                <label for="card9" class="button return" aria-hidden="true">
                   <i class="fas fa-arrow-left"></i>
                 </label>
             </div>
