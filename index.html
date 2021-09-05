@@ -206,12 +206,11 @@
     <input type="checkbox" id="card2" class="more" aria-hidden="true">
     <div class="content">
       <!-- FRONT OF CARD -->
-        <div class="front" style="background-image: url('./assets/images/demo.png')">
+        <div class="front" style="background-image: url('./assets/images/curlshoppe.png')">
             <div class="inner">
-                <h2>Not-Twitter</h2>
+                <h2>Curlshoppe</h2>
                 <div class="technology">
-                  <p>JAVASCRIPT / CSS / REACT / NODE.JS / GRAPHQL / APOLLO SERVER / REACT ROUTER / NODEMON / JSON-WEBTOKEN / 
-                    FAKER
+                  <p>SHOPIFY
                   </p>
                 </div>
                 <label for="card2" class="button" aria-hidden="true">
@@ -223,39 +222,49 @@
         <div class="back">
             <div class="inner">
                 <div class="info">
-                    <span>NODE</span>
+                    <span>HTML</span>
                 </div>
                 <div class="info">
-                    <span>APOLLO</span>
+                    <span>SCSS</span>
                 </div>
                 <div class="info">
                     <span>JAVASCRIPT</span>
                 </div>
                 <div class="info">
-                    <span>GRAPHQL</span>
+                    <span>LIQUID</span>
                 </div>
                 <!-- DESCRIPTION -->
                 <div class="description">
                     <p>
-                      A FULL MERN stack!! (MongoDB, Express.js, React, and Node.js)
+                      A fully deployed E-commerce website
                     </p>
                     <p>
-                      A social media application. 
-                      Users will be able to sign up and create an account, post their thoughts, 
-                      and interact with other users, just like you might find in the social media apps you use day in and day out in real life.
+                      CurlShoppe is a small business based out of Toronto, Canada. It was fully developed using SHOPIFY and is highly
+                      successful!
                     </p>
                     <p>
-                      Click on Code to read more!
+                      Click on Demo to order some products now!
                     </p>
                 </div>
                 <!-- PROJECT TITLE -->
                 <div class="project-title">DETAILS</div>
                 <!-- BUTTONS -->
-                <label for="card2" class="button code" aria-hidden="true">
-                  <a href="https://github.com/BennAsabir/deep-thoughts" target="_blank">Code</a>
-                </label>
+                <button for="card8" class="button code popup" onclick="myFunction()">
+                  Code
+                  <span class="popuptext" id="myPopup">This App has no code!</span>
+                </button>
+                
+                <!--POPUP TEXT-->
+                <script>
+                  // When the user clicks on div, open the popup
+                  function myFunction() {
+                    var popup = document.getElementById("myPopup");
+                    popup.classList.toggle("show");
+                  }
+                </script>
+
                 <label for="card2" class="button demo" aria-hidden="true">
-                  <a href="https://morning-tor-27341.herokuapp.com/" target="_blank">Demo</a>
+                  <a href="https://curlshoppe.ca/" target="_blank">Demo</a>
                 </label>
                 <label for="card2" class="button return" aria-hidden="true">
                   <i class="fas fa-arrow-left"></i>
